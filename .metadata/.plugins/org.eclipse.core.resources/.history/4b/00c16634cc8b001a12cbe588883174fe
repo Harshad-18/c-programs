@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+void largeNumber(float [],int);
+
+int main() {
+
+	float numbers[5] = {983, 2.9, 34, 433, 1000.567};
+	float *p;
+	p = numbers;
+
+	result = largeNumber(p, 5);
+
+	printf("Largest number is %f",result);
+
+	return 0;
+}
+void largeNumber(float a[],int size){
+
+	for(int i = 0 ;i < size ;i++){
+
+		if(a[i]>a[i+1]){
+
+			printf("Largest value is %f",a[i]);
+
+		}else{
+
+			printf("Largest value is %f ",a[i+1]);
+		}
+
+
+
+	}
+}

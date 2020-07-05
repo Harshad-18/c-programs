@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+union Books{
+	char title[20];
+	char author[20];
+	int price;
+};
+int main() {
+	setbuf(stdout, NULL);
+
+	union Books b1;
+	strcpy(b1.title,"Harry Potter");
+	printf("Book name:%s",b1.title);
+
+	strcpy(b1.author,"J K Rowling");
+	printf("Author name:%s",b1.author);
+
+	b1.price=1200;
+	printf("Price:%d",b1.price);
+
+
+
+
+
+
+	return 0;
+}

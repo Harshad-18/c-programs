@@ -1,0 +1,62 @@
+#include <stdio.h>
+
+
+enum Year{
+	jan,feb,march,april,may,june,july,august,sept,oct,nov,dec
+};
+
+int main() {
+
+	enum Year month;
+
+	month = dec ;
+
+
+	switch (month) {
+
+		case jan:
+			puts("January");
+		break;
+
+		case feb:
+			puts("February");
+		break;
+
+		case march:
+			puts("March");
+		break;
+
+		case april:
+					puts("April");
+				break;
+
+		case may:
+					puts("May");
+				break;
+		case june:
+					puts("June");
+				break;
+		case july:
+					puts("July");
+				break;
+		case august:
+					puts("March");
+				break;
+		case sept:
+		puts("March");
+		break;
+		case oct:
+					puts("March");
+				break;
+		case nov:
+					puts("March");
+				break;
+		case dec:
+					puts("March");
+				break;
+		default:
+			puts("No color found");
+	}
+
+	return 0;
+}

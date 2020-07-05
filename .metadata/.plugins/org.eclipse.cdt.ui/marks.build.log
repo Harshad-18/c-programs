@@ -1,0 +1,14 @@
+03:33:36 **** Incremental Build of configuration Debug for project marks ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\marks.o" "..\\src\\marks.c" 
+..\src\marks.c: In function 'main':
+..\src\marks.c:44:13: warning: statement with no effect [-Wunused-value]
+   44 |  }else(total<150){
+      |       ~~~~~~^~~~~
+..\src\marks.c:44:18: error: expected ';' before '{' token
+   44 |  }else(total<150){
+      |                  ^
+      |                  ;
+
+03:33:37 Build Failed. 1 errors, 1 warnings. (took 278ms)
+

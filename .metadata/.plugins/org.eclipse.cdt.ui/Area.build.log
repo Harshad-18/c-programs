@@ -1,0 +1,15 @@
+01:47:49 **** Incremental Build of configuration Debug for project Area ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Area.o" "..\\src\\Area.c" 
+..\src\Area.c: In function 'main':
+..\src\Area.c:21:2: warning: 'usleep' is deprecated [-Wdeprecated-declarations]
+   21 |  usleep(2000000000);
+      |  ^~~~~~
+In file included from ..\src\Area.c:2:
+c:\mingw\include\unistd.h:100:29: note: declared here
+  100 | int __cdecl __MINGW_NOTHROW usleep( useconds_t )__MINGW_ATTRIB_DEPRECATED;
+      |                             ^~~~~~
+gcc -o Area.exe "src\\Area.o" 
+
+01:47:50 Build Finished. 0 errors, 1 warnings. (took 1s.152ms)
+

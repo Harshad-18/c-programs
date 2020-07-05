@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Books{
+	char title[20];
+	char author[20];
+	int price;
+};
+int main() {
+
+	struct Books b1;
+	strcpy(b1.title,"Harry Potter");
+	strcpy(b1.author,"J K Rowling");
+	b1.price=1200;
+
+	struct Books b2;
+	strcpy(b2.title,"IT");
+	strcpy(b2.author,"Stephin King");
+	b2.price=800;
+
+
+	return 0;
+}

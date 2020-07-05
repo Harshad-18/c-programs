@@ -1,0 +1,7 @@
+02:09:45 **** Incremental Build of configuration Debug for project inputuser ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\inputuser.o" "..\\src\\inputuser.c" 
+gcc -o inputuser.exe "src\\inputuser.o" 
+
+02:09:45 Build Finished. 0 errors, 0 warnings. (took 612ms)
+

@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+	int n;
+	float sum = 0,*p;
+
+	p=(float*)malloc(n * sizeof(float))
+
+	printf("Enetr the n number: ");
+	scanf("%f", &n);
+
+	if(p == NULL){
+		("Memory allocation failed");
+	}else{
+
+		puts("Enter the data: ");
+
+	for(int i=0;i < n;i++){
+		scanf("%f", p+i);
+	}
+
+	for(int i=0: i < n; i++){
+		sum = sum + p[i];
+	}
+	printf("Sum of the n number is:%.2f",sum");
+	}
+	return 0;
+}

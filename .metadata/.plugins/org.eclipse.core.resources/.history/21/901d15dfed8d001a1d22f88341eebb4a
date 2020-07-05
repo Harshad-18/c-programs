@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <unistd.h>
+
+
+
+int main() {
+	int random;
+	srand(time(NULL));
+
+	random=(rand() % 6) + 1;
+
+	puts("Rolling the dice.......");
+	usleep(2000000);
+
+	printf("You got:%d",random);
+    return 0;
+}

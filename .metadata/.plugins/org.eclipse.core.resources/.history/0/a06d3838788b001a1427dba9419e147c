@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+long factorial(int);
+
+int main(){
+	int num;
+	long result;
+
+	printf("enter the number: ",num);
+	scanf("%d", &num);
+
+	result=factorial(num);
+
+	printf("Factorial of the number is:%ld",result);
+
+
+	return 0
+}
+
+long factorial(int num){
+
+	if(num > 0){
+		return num*factorial(--num);
+	}
+	else{
+		return 1;
+	}
+}

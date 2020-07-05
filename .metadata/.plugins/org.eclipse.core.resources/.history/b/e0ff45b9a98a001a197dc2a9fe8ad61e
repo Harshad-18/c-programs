@@ -1,0 +1,29 @@
+#include <stdio.h>
+int oddNumber(int,int)
+
+
+int main() {
+
+	int a[10]={2, 98, 99, 27, 31, 53, 88, 92, 11, 12};
+
+	oddNumber(a,10);
+
+	result = printf();
+
+
+
+
+	return 0;
+}
+int oddNumber(int a[],int n){
+
+	int odd;
+	for(int i=0; i < n; i++){
+		if(a[i] % 2 != 0){
+			printf("%d",a[i]);
+		}
+
+
+	}
+	return printf();
+}

@@ -1,0 +1,23 @@
+23:46:40 **** Incremental Build of configuration Debug for project operator ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\operator.o" "..\\src\\operator.c" 
+..\src\operator.c: In function 'main':
+..\src\operator.c:8:31: warning: operation on 'num' may be undefined [-Wsequence-point]
+    8 |  int result = num-- + --num - ++num;
+      |                               ^~~~~
+..\src\operator.c:8:31: warning: operation on 'num' may be undefined [-Wsequence-point]
+..\src\operator.c:9:9: error: stray '\223' in program
+    9 |  printf(“%d”, result);
+      |         ^
+..\src\operator.c:9:10: error: expected expression before '%' token
+    9 |  printf(“%d”, result);
+      |          ^
+..\src\operator.c:9:12: error: stray '\224' in program
+    9 |  printf(“%d”, result);
+      |            ^
+..\src\operator.c:8:6: warning: unused variable 'result' [-Wunused-variable]
+    8 |  int result = num-- + --num - ++num;
+      |      ^~~~~~
+
+23:46:40 Build Failed. 3 errors, 3 warnings. (took 197ms)
+
